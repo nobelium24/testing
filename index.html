@@ -26,12 +26,13 @@
         console.log(data);
         let div = document.getElementById("div1")
         data.map(item => {
-            div.innerHTML = `
+            div.innerHTML += `
 
             <div class="card">
 
                 <h6>${item.id}</h6>
-                <h1> ${item.artist}</h1>
+                <h3> ${item.artist}</h3>
+                <h3> ${item.song}</h3>
             </div>
         `
         })
